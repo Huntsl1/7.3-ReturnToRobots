@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>User Directory</title>
+    <link rel="stylesheet" href="/main.css">
+  </head>
+  <body>
+
+    <div class="flex-container">
+      {{#users}}
+      <a href="{{id}}" class="worker" >
+        <img src={{avatar}}>
+        <h3 class="worker-name">{{name}}</h3>
+        <div class="worker-job">{{job}}</div>
+        <div class="worker-no-job">{{^job}}Available for hire{{/job}}</div>
+        <div class="worker-company">{{company}}</div>
+        <div class="worker-no-company">{{^company}}{{/company}}</div>
+      </a>
+      {{/users}}
+
+    </div>
+
+
+
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Worker Profile</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="profile-card">
+      <div class="top-row">
+        <span class="profile-image">
+          <img src={{avatar}} alt="{{name}}'s image">
+        </span>
+        <span class="profile-info">
+          <h1 class="profile-name">{{name}}</h1>
+          <span class="profile-address">{{address.city}} {{address.country}} | {{job}} {{company}}</span>
+          {{^job}}<span class="profile-no-job">Available for hire</span>{{/job}}
+          <p class="profile-contact">{{email}} | {{phone}}</p>
+        </span>
+      </div>
+      <div class="bottom-row">
+        <span class="profile-headers">
+          {{#university}}<h3>Education</h3>{{/university}}
+          <h3>Skills</h3>
+      </span>
+        <span class="profile-edu-skills">
+          <p class="profile-edu">{{university}}</p>
+          <div class="profile-skills">
+            {{#skills}}
+            <p>{{.}}</p>
+            {{/skills}}
+          </div>
+        </span>
+      </div>
+    </div>
+  </body>
+</html>
+Contact GitHub API Training Shop Blog About
+© 2017 GitHub, Inc. Terms Privacy Security Status Help

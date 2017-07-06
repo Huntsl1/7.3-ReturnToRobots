@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+
+.flex-container {
+  width: 65%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex-container a:hover {
+  cursor: pointer;
+}
+
+.flex-container a {
+  flex: 0 1 22.5%;
+  border: 1px #E8E8E8 solid;
+  border-radius: 3px;
+  padding: 15px;
+  margin:10px;
+}
+
+.flex-container img {
+  text-align: center;
+  display: flex;
+}
+
+.worker-name {
+  color: #3A7DCE;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.worker-job {
+  color: #72787B;
+}
+
+.worker-no-job {
+  color: #CB635E;
+}
+
+.worker-company {
+  color: #72787B;
+}
+
+
+
+
+.profile-card {
+  margin-left: 30%;
+  margin-top: 10%;
+}
+
+span {
+  display: inline-block;
+}
+
+.top-row {
+  height: 155px;
+}
+
+.profile-image img {
+  border-radius: 50%;
+  border: 1px #E8E8E8 solid;
+}
+
+.profile-info {
+  margin-left: 20px;
+  vertical-align: top;
+}
+
+.profile-name {
+  font-size: 45px;
+  font-weight: 400;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.profile-no-job {
+  color: #CB635E;
+}
+
+.profile-headers {
+  text-align: right;
+  vertical-align: top;
+  width: 150px;
+}
+
+.profile-edu {
+  margin-top: 19.5px;
+}
+
+.profile-edu-skills{
+  margin-left: 20px;
+}
+Contact GitHub API Training Shop Blog About
+© 2017 GitHub, Inc. Terms Privacy Security Status Help
